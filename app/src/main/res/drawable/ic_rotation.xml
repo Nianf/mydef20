@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rotate xmlns:android="http://schemas.android.com/apk/res/android" android:fromDegrees="90" android:toDegrees="-90">
+    <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+<!--        layer-list叠加，圆在下面，上面是stroke描边-->
+        <item>
+            <shape android:shape="oval">
+                <solid android:color="#D38BFF"/>
+                <size
+                    android:width="256dp" android:height="256dp"/>
+            </shape>
+        </item>
+        <item android:right="192dp" android:left="-8dp">
+            <shape android:shape="line">
+                <stroke
+                    android:dashWidth="20dp"
+                    android:width="20dp"
+                    android:color="#F1DE63"/>
+            </shape>
+        </item>
+    </layer-list>
+</rotate>
